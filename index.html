@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock paper scissors</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Heading here  -->
+    <div class="header">
+      <h1>Rock paper scissors</h1>
+      <button id="btn">switch mode</button>
+    </div>
+
+    <!-- All choices here  -->
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="images/rock.png" alt="rock emoji symbol" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="images/paper.png" alt="paper emoji symbol" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="images/scissors.png" alt="scissors emoji symbol" />
+      </div>
+    </div>
+
+    <!-- score boards here  -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+
+      <!-- Reset Button here -->
+      <button id="reset" class="btn">Reset</button>
+
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <!-- messages here  -->
+    <div class="msg-container">
+      <p id="msg">Your Move</p>
+    </div>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
